@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\style.css">
+    
 </head>
 <body>
     <!-- Main Content (Menu)-->
@@ -17,11 +18,11 @@
     <nav>
         <div class="main_segitiga">
             <img src="assets\segitiga.png"; class="main_image">
-            <button onclick="startSegitiga()"; class="main_button"> Segitiga </button>
+            <button onclick="startSegitiga()" class="main_button"> Segitiga </button>
         </div>
         <div class="main_jajargenjang">
             <img src="assets\jajargenjang.png"; class="main_image">
-            <button onclick="startJajarGenjang()"; class="main_button"> Jajar Genjang </button>
+            <button onclick="startJajarGenjang()" class="main_button"> Jajar Genjang </button>
         </div>
     </nav>
 
@@ -52,17 +53,49 @@
                     <button onclick="resetLuasSegitiga()" type="reset"; class="reset_segitiga"; value="Reset"> Reset </button>
                 </section>
                 <section class="hasil">
-                    <p id="hasil_segitiga"></p>
+                    <p id="hasilL_segitiga"></p>
                 </section>
-            </div> <br> <br> <br>
-            <div class="isi_luas_segitiga"> 
+            </div> <br> <hr> <br>
+            <div class="isi_segitiga"> 
                 <header>
                     <h1 class="header_segitiga">Keliling Segitiga</h1>
                 </header>
                 <section class="rumus_luas_segitiga">
-                    <img src="assets\luas-segitiga.jpg"; class="isi_image">
-                    <p> Rumus Luas Segitiga yaitu: </p>
-                    <h1> L = 1/2 x a x t </h1>
+                    <img src="assets\keliling-segitiga.jpg"; class="isi_image">
+                    <p> Rumus Keliling Segitiga yaitu: </p>
+                    <h1> K = s1 + s2 + s3 </h1>
+                    <p> Di mana: <br>
+                        s = sisi <br>
+                    </p> <hr>
+                </section>
+            </div>
+            <div class="hitung_segitiga">
+                <section class="input">
+                    <h1> Hitung Keliling Segitiga </h1> 
+                    <input type="text"; name="sisi1_segitiga"; placeholder="Nilai Sisi 1"; required>
+                    <input type="text"; name="sisi2_segitiga"; placeholder="Nilai Sisi 2"; required> 
+                    <input type="text"; name="sisi3_segitiga"; placeholder="Nilai Sisi 3"; required><br>
+                    <button onclick="hitungKelilingSegitiga()" type="submit"; class="submit_segitiga"; value="Hitung"> Hitung </button>
+                    <button onclick="resetKelilingSegitiga()" type="reset"; class="reset_segitiga"; value="Reset"> Reset </button>
+                </section>
+                <section class="hasil">
+                    <p id="hasilK_segitiga"></p>
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <!-- Isi Jajar Genjang (Hidden First)-->
+    <main class="div">
+        <section class="jajargenjang">
+            <div class="isi_luas_jajargenjang"> 
+                <header>
+                    <h1 class="header_jajargenjang">Luas Jajar Genjang</h1>
+                </header>
+                <section class="rumus_luas_jajargenjang">
+                    <img src="assets\luas-jajargenjang.jpg"; class="isi_image">
+                    <p> Rumus Luas Jajar Genjang yaitu: </p>
+                    <h1> L = a x t </h1>
                     <p> Di mana: <br>
                         L = Luas <br>
                         a = Panjang Alas <br>
@@ -70,16 +103,42 @@
                     </p> <hr>
                 </section>
             </div>
-            <div class="hitung_luas_segitiga">
+            <div class="hitung_luas_jajargenjang">
                 <section class="input">
-                    <h1> Hitung Luas Segitiga </h1> 
-                    <input type="text"; name="alas_segitiga"; placeholder="Nilai Alas"; required>
-                    <input type="text"; name="tinggi_segitiga"; placeholder="Nilai Tinggi"; required> <br>
-                    <button onclick="hitungLuasSegitiga()" type="submit"; class="submit_segitiga"; value="Hitung"> Hitung </button>
-                    <button onclick="resetLuasSegitiga()" type="reset"; class="reset_segitiga"; value="Reset"> Reset </button>
+                    <h1> Hitung Luas Jajar Genjang </h1> 
+                    <input type="text"; name="alas_jajargenjang"; placeholder="Nilai Alas"; required>
+                    <input type="text"; name="tinggi_jajargenjang"; placeholder="Nilai Tinggi"; required> <br>
+                    <button onclick="hitungLuasJajarGenjang()" type="submit"; class="submit_jajargenjang"; value="Hitung"> Hitung </button>
+                    <button onclick="resetLuasJajarGenjang()" type="reset"; class="reset_jajargenjang"; value="Reset"> Reset </button>
                 </section>
                 <section class="hasil">
-                    <p id="hasil_segitiga"></p>
+                    <p id="hasilL_jajargenjang"></p>
+                </section>
+            </div> <br> <hr> <br>
+            <div class="isi_jajargenjang"> 
+                <header>
+                    <h1 class="header_jajargenjang">Keliling Jajar Genjang</h1>
+                </header>
+                <section class="rumus_keliling_jajargenjang">
+                    <img src="assets\keliling-jajargenjang.jpg"; class="isi_image">
+                    <p> Rumus Keliling Jajar Genjang yaitu: </p>
+                    <h1> K = a + b + c + d </h1>
+                    <p> Di mana: <br>
+                        a dan c = alas/tutup <br>
+                        b dan d = sisi miring <br>
+                    </p> <hr>
+                </section>
+            </div>
+            <div class="hitung_jajargenjang">
+                <section class="input">
+                    <h1> Hitung Keliling Jajar Genjang</h1> 
+                    <input type="text"; name="alastutup_jajargenjang"; placeholder="Nilai Sisi A dan C"; required>
+                    <input type="text"; name="sisimiring_jajargenjang"; placeholder="Nilai Sisi B dan D"; required> <br>
+                    <button onclick="hitungKelilingJajarGenjang()" type="submit"; class="submit_jajargenjang"; value="Hitung"> Hitung </button>
+                    <button onclick="resetKelilingJajarGenjang()" type="reset"; class="reset_jajargenjang"; value="Reset"> Reset </button>
+                </section>
+                <section class="hasil">
+                    <p id="hasilK_jajargenjang"></p>
                 </section>
             </div>
         </section>

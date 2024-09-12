@@ -68,7 +68,7 @@ nav {
 .div {
     display: flex;
 }
-.segitiga {
+.segitiga, .jajargenjang{
     display: none;
     position: absolute;
     top: 800px;
@@ -76,10 +76,10 @@ nav {
     background-color: #dad4a9;
 }
 
-.isi_luas_segitiga {
+.isi_segitiga, .isi_jajargenjang {
     width: 100%;
 }
-header>.header_segitiga {
+header>.header_segitiga, header>.header_jajargenjang {
     background-color: #c3b46e;
     color:#483075
 }
@@ -95,7 +95,7 @@ p {
     font-size: larger;
 }
 
-.rumus_luas_segitiga>h1 {
+h1 {
     text-align: center;
     font-size: 50px;
     font-style: italic;
@@ -122,7 +122,7 @@ input {
     text-align: center;
 }
 
-.submit_segitiga , .reset_segitiga {
+.submit_segitiga , .reset_segitiga, .submit_jajargenjang, .reset_jajargenjang {
     width: 60%;
     height: 30px;
     display: flex;
@@ -134,9 +134,7 @@ input {
     font-size: x-large;
 }
 
-.hitung_keliling_segitiga {
-    margin-top: 200px;;
-}
+
 @media screen and (max-width: 600px) {
     body {
         display: flex;
