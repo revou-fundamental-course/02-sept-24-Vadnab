@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\style.css">
-    <script src="js\script.js"></script>
 </head>
 <body>
-    <header>
+    <!-- Main Content (Menu)-->
+    <header class="header_main">
         <h1> Welcome to Katik </h1>
         <h3> Hai Sobat, Selamat datang di katik :) Sebuah web apps sederhana
             yang berujuan untuk <u> mengitung nilai luas dan keliling bangun datar </u>
@@ -24,5 +24,66 @@
             <button onclick="startJajarGenjang()"; class="main_button"> Jajar Genjang </button>
         </div>
     </nav>
+
+    <!-- Isi Segitiga (Hidden First)-->
+    <main class="div">
+        <section class="segitiga">
+            <div class="isi_luas_segitiga"> 
+                <header>
+                    <h1 class="header_segitiga">Luas Segitiga</h1>
+                </header>
+                <section class="rumus_luas_segitiga">
+                    <img src="assets\luas-segitiga.jpg"; class="isi_image">
+                    <p> Rumus Luas Segitiga yaitu: </p>
+                    <h1> L = 1/2 x a x t </h1>
+                    <p> Di mana: <br>
+                        L = Luas <br>
+                        a = Panjang Alas <br>
+                        t = Tinggi <br> 
+                    </p> <hr>
+                </section>
+            </div>
+            <div class="hitung_luas_segitiga">
+                <section class="input">
+                    <h1> Hitung Luas Segitiga </h1> 
+                    <input type="text"; name="alas_segitiga"; placeholder="Nilai Alas"; required>
+                    <input type="text"; name="tinggi_segitiga"; placeholder="Nilai Tinggi"; required> <br>
+                    <button onclick="hitungLuasSegitiga()" type="submit"; class="submit_segitiga"; value="Hitung"> Hitung </button>
+                    <button onclick="resetLuasSegitiga()" type="reset"; class="reset_segitiga"; value="Reset"> Reset </button>
+                </section>
+                <section class="hasil">
+                    <p id="hasil_segitiga"></p>
+                </section>
+            </div> <br> <br> <br>
+            <div class="isi_luas_segitiga"> 
+                <header>
+                    <h1 class="header_segitiga">Keliling Segitiga</h1>
+                </header>
+                <section class="rumus_luas_segitiga">
+                    <img src="assets\luas-segitiga.jpg"; class="isi_image">
+                    <p> Rumus Luas Segitiga yaitu: </p>
+                    <h1> L = 1/2 x a x t </h1>
+                    <p> Di mana: <br>
+                        L = Luas <br>
+                        a = Panjang Alas <br>
+                        t = Tinggi <br> 
+                    </p> <hr>
+                </section>
+            </div>
+            <div class="hitung_luas_segitiga">
+                <section class="input">
+                    <h1> Hitung Luas Segitiga </h1> 
+                    <input type="text"; name="alas_segitiga"; placeholder="Nilai Alas"; required>
+                    <input type="text"; name="tinggi_segitiga"; placeholder="Nilai Tinggi"; required> <br>
+                    <button onclick="hitungLuasSegitiga()" type="submit"; class="submit_segitiga"; value="Hitung"> Hitung </button>
+                    <button onclick="resetLuasSegitiga()" type="reset"; class="reset_segitiga"; value="Reset"> Reset </button>
+                </section>
+                <section class="hasil">
+                    <p id="hasil_segitiga"></p>
+                </section>
+            </div>
+        </section>
+    </div>
+    <script src="js\script.js"></script>
 </body>
 </html>

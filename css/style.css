@@ -2,6 +2,7 @@ body {
     background-color: #624E88;
 }
 
+/* Main Content (MENU) */
 
 header {
     text-align: center;
@@ -60,4 +61,85 @@ nav {
     background-color: #c3b46e;
     border-color: #dad4a9;
     color: #483075;
+}
+
+/* ISI SEGITIGA (HIDDEN FIRST)*/
+
+.div {
+    display: flex;
+}
+.segitiga {
+    display: none;
+    position: absolute;
+    top: 800px;
+    width:100%;
+    background-color: #dad4a9;
+}
+
+.isi_luas_segitiga {
+    width: 100%;
+}
+header>.header_segitiga {
+    background-color: #c3b46e;
+    color:#483075
+}
+
+.isi_image {
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    color:#35303f;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+.rumus_luas_segitiga>h1 {
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    letter-spacing: px;
+    margin: -1px;
+}
+
+.input {
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 50px;
+    margin-top: 5%;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.submit_segitiga , .reset_segitiga {
+    width: 60%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    align-items: center;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.hitung_keliling_segitiga {
+    margin-top: 200px;;
+}
+@media screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 }
