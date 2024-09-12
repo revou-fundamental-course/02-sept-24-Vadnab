@@ -1,0 +1,63 @@
+body {
+    background-color: #624E88;
+}
+
+
+header {
+    text-align: center;
+    width: 100%;
+    color: #E6D9A2;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_image {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    margin-left: 10%;
+}
+
+.main_segitiga, .main_jajargenjang {
+    display: flex;
+    position: absolute;
+    align-content: center ;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    left: 5%;
+    right: 5%;
+    background-color: #CB80AB;
+    
+}
+
+.main_jajargenjang {
+    margin-top: 290px;
+}
+
+.main_button {
+    background-color: #E6D9A2;
+    border-color: #e7d275;
+    border-width: 10px;
+    border-radius: 30px;
+    border-collapse: collapse;
+    width:100%;
+    margin-left: 80px;
+    margin-right: 20px;
+    color: #624E88;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main_button:hover {
+    background-color: #c3b46e;
+    border-color: #dad4a9;
+    color: #483075;
+}
